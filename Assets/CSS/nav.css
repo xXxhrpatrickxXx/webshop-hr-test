@@ -1,5 +1,9 @@
 .c-nav{
     background-color: var(--primary-theme-light-grey);
+    position:fixed;
+    right:0;
+    left:0;
+    top:40px;
 }
 
 .c-nav__ul{
@@ -16,4 +20,17 @@
 .c-nav__a {
     padding:35px 0;
     display:block;
+}
+
+.c-nav__a:hover{
+    background-color: var(--primary-theme-dark-grey);
+    border-radius:15px;
+}
+
+@media(min-width:768px){
+    .c-nav{
+        position:unset;
+        left:unset;
+        right:unset;
+    }
 }
