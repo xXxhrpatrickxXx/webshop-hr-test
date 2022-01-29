@@ -1,9 +1,10 @@
 .c-header{
-    height: 40px;
+    height: var(--primary-mobile-header-height);
     background-color: var(--primary-theme-light-grey);
     position:sticky;
     top:0;
     left:0;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 20%);
 }
 
 .c-header__form{
@@ -36,7 +37,7 @@
 
 @media(min-width:768px){
     .c-header{
-        height:70px;
+        height:var(--primary-desktop-header-height);
         display: flex;
         align-items:center;
     }

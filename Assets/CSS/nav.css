@@ -18,7 +18,7 @@
 }
 
 .c-nav__a {
-    padding:35px 0;
+    padding:calc((var(--primary-mobile-navigation-height) - 18px) / 2) 0; /* 18 is the height of the text. */
     display:block;
 }
 
@@ -29,8 +29,10 @@
 
 @media(min-width:768px){
     .c-nav{
-        position:unset;
         left:unset;
         right:unset;
+        bottom:0;
+        top: var(--primary-desktop-header-height);
+        width: var(--primary-desktop-navigation-width);
     }
 }

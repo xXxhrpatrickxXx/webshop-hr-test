@@ -14,17 +14,24 @@
     --primary-theme-light-blue: rgba(41, 142, 234, 1);
     --primary-theme-transparent-text: rgba(255, 255, 255, .7);
     --primary-theme-text: rgba(255, 255, 255, 1);
+
+    --primary-desktop-navigation-width: 100px;
+    --primary-desktop-header-height: 70px;
+
+    --primary-mobile-navigation-height:90px;
+    --primary-mobile-header-height: 40px;
 }
 
 body{
-    min-height: 200vh;
+    background-color:var(--primary-theme-dark-grey);
 }
 
-.l-main-grid{
-    background-color:green;
-    height:30px;
+.l-grid{
     width:100%;
-    margin-top: 88px;
+}
+
+.l-grid--primary-content-inset{
+    margin-top: var(--primary-mobile-navigation-height);
 }
 
 .l-flex{
@@ -45,7 +52,13 @@ body{
         flex-direction: column;
     }
 
-    .l-main-grid{
-        margin-top:unset;
+    .l-grid{ 
     }
+
+    .l-grid--primary-content-inset{
+        margin-top:unset;
+        margin-left: var(--primary-desktop-navigation-width);
+        /* min-height: calc(100vh - var(--primary-desktop-header-height)); */ /* enable to force main to grow to the bottom of the page. */
+    }
+
 }
