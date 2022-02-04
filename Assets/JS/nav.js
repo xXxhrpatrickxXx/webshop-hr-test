@@ -3,7 +3,7 @@ let navUlElement = document.querySelector(".c-nav__ul");
 const navHTML = [
     {
         name : "Home",
-        href : "/home/"
+        href : "/"
     },
 
     {
