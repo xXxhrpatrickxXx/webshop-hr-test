@@ -26,14 +26,6 @@ body{
     background-color:var(--primary-theme-dark-grey);
 }
 
-.l-grid{
-    width:100%;
-}
-
-.l-grid--primary-content-inset{
-    margin-top: var(--primary-mobile-navigation-height);
-}
-
 .l-flex{
     display: flex;
     flex-direction: column;
@@ -51,14 +43,4 @@ body{
     .l-flex--reverse{
         flex-direction: column;
     }
-
-    .l-grid{ 
-    }
-
-    .l-grid--primary-content-inset{
-        margin-top:unset;
-        margin-left: var(--primary-desktop-navigation-width);
-        /* min-height: calc(100vh - var(--primary-desktop-header-height)); */ /* enable to force main to grow to the bottom of the page. */
-    }
-
 }
