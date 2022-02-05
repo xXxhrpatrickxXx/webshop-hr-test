@@ -1,28 +1,23 @@
-let navUlElement = document.querySelector(".c-nav__ul");
-
+let navUlElement = document.querySelector(".js-page-switcher");
 const navHTML = [
     {
-        name : "Home",
+        name : "Hjem",
         href : "/"
     },
-
     {
-        name : "Originals",
+        name : "Originaler",
         href : "/originals/"
     },
-
     {
-        name : "Guests",
+        name : "Gæster",
         href : "/guests/"
     },
-
     {
-        name : "Frames",
+        name : "Rammer",
         href : "/frames/"
     },
-
     {
-        name : "Contact",
+        name : "Kontakt",
         href : "/contact/"
     }
 ]
@@ -33,9 +28,13 @@ navHTML.forEach(function(item) {
 
     let anchor = document.createElement("a");
     anchor.classList.add("c-nav__a");
-    anchor.href=item.href;
-    anchor.innerHTML=item.name;
+    anchor.href = item.href;
+    anchor.innerHTML = item.name;
 
     li.appendChild(anchor);
     navUlElement.appendChild(li);
+
+    if(window.location.pathname === item.href){
+        anchor.classList.add("c-nav__a--active");
+    }
 });
