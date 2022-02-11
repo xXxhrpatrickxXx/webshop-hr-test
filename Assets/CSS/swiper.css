@@ -1,0 +1,27 @@
+.c-swiper{
+    width: calc(100% - 40px);
+    margin:20px auto!important;
+    overflow:hidden;
+    position:relative;
+    padding-bottom:30px;
+    z-index:0;
+}
+
+.c-swiper__pagination{
+    bottom:0px!important;
+    transform:scale(1.5);
+}
+
+.c-swiper__heading{
+    color: var(--primary-theme-transparent-text);
+    margin-bottom:10px;
+    text-align:center;
+}
+
+@media(min-width:768px){
+    .c-swiper__heading{
+        text-align:left;
+    }
+
+}
+

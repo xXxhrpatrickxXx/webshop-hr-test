@@ -52,6 +52,7 @@ body{
     .h-nav-spacing{
         margin-top:unset;
         margin-left: var(--primary-desktop-navigation-width);
+        width: calc(100% - var(--primary-desktop-navigation-width));
         /* min-height: calc(100vh - var(--primary-desktop-header-height)); */ /* enable to force div to grow to the bottom of the page. */
     }
 }

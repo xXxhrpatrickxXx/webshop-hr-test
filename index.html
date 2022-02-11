@@ -1,41 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AK Galleri</title>
-    <link rel="stylesheet" href="/assets/css/general.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/nav.css">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="/assets/css/general.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/nav.css" />
+    <link rel="stylesheet" href="/assets/css/grid-layout.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.css" />
+
     <script defer src="/assets/js/global-utils.js"></script>
     <script defer src="/assets/js/nav.js"></script>
-</head>
-<body>
+    <script defer type="module" src="/assets/js/swiper-originals.js"></script>
+    <script defer type="module" src="/assets/js/swiper-guests.js"></script>
+    <script defer type="module" src="/assets/js/swiper-frames.js"></script>
+  </head>
+  <body>
     <header class="c-header">
-        <form class="c-header__form">
-            <input type="search" class="c-header__input" placeholder="Søg">
-        </form>
+      <form class="c-header__form">
+        <input type="search" class="c-header__input" placeholder="Søg" />
+      </form>
     </header>
-    
+
     <div class="l-flex">
+      <nav class="c-nav">
+        <ul class="c-nav__ul js-page-switcher l-flex l-flex--reverse"></ul>
+      </nav>
 
-        <nav class="c-nav">
-            <ul class="c-nav__ul js-page-switcher l-flex l-flex--reverse">
-            </ul>
-        </nav>
-
-        <main class="h-nav-spacing">
-            <!-- Content can be added here to appear above the grid display. -->
-            <div class="l-grid">
-            
+      <main class="h-nav-spacing">
+        <!-- Content can be added here to appear above the grid display. -->
+        <div class="c-swiper js-original-slider">
+            <h1 class="c-swiper__heading">Originaler</h1>
+          <div class="c-swiper__wrapper swiper-wrapper">
+            <div class="c-swiper__slide swiper-slide">
+              <div class="c-product">
+                <figure class="c-product__figure">
+                  <img
+                    src="/assets/img/art_1.jpg"
+                    alt=""
+                    class="c-product__image"
+                  />
+                  <figcaption class="c-product__figcaption"></figcaption>
+                </figure>
+              </div>
             </div>
-        </main>
+            <div class="c-swiper__slide swiper-slide">
+              <div class="c-product">
+                <figure class="c-product__figure">
+                  <img
+                    src="/assets/img/art_2.jpg"
+                    alt=""
+                    class="c-product__image"
+                  />
+                  <figcaption class="c-product__figcaption"></figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="c-swiper__slide swiper-slide">
+              <div class="c-product">
+                <figure class="c-product__figure">
+                  <img
+                    src="/assets/img/art_3.jpg"
+                    alt=""
+                    class="c-product__image"
+                  />
+                  <figcaption class="c-product__figcaption"></figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="c-swiper__slide swiper-slide">
+              <div class="c-product">
+                <figure class="c-product__figure">
+                  <img
+                    src="/assets/img/art_4.jpg"
+                    alt=""
+                    class="c-product__image"
+                  />
+                  <figcaption class="c-product__figcaption"></figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="c-swiper__slide swiper-slide">
+              <div class="c-product">
+                <figure class="c-product__figure">
+                  <img
+                    src="/assets/img/art_5.jpg"
+                    alt=""
+                    class="c-product__image"
+                  />
+                  <figcaption class="c-product__figcaption"></figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="c-swiper__slide swiper-slide">
+              <div class="c-product">
+                <figure class="c-product__figure">
+                  <img
+                    src="/assets/img/art_6.jpg"
+                    alt=""
+                    class="c-product__image"
+                  />
+                  <figcaption class="c-product__figcaption"></figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="c-swiper__slide swiper-slide">
+              <div class="c-product">
+                <figure class="c-product__figure">
+                  <img
+                    src="/assets/img/art_7.jpg"
+                    alt=""
+                    class="c-product__image"
+                  />
+                  <figcaption class="c-product__figcaption"></figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination c-swiper__pagination"></div>
+        </div>
 
+        <div class="c-swiper js-guests-slider">
+            <h1 class="c-swiper__heading">Gæster</h1>
+            <div class="c-swiper__wrapper swiper-wrapper">
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_1.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_2.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_3.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_4.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_5.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_6.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_7.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination c-swiper__pagination"></div>
+          </div>
+
+          <div class="c-swiper js-frames-slider">
+            <h1 class="c-swiper__heading">Rammer</h1>
+            <div class="c-swiper__wrapper swiper-wrapper">
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_1.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_2.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_3.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_4.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_5.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_6.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="c-swiper__slide swiper-slide">
+                <div class="c-product">
+                  <figure class="c-product__figure">
+                    <img
+                      src="/assets/img/art_7.jpg"
+                      alt=""
+                      class="c-product__image"
+                    />
+                    <figcaption class="c-product__figcaption"></figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination c-swiper__pagination"></div>
+          </div>
+
+        <div class="l-grid"></div>
+      </main>
     </div>
 
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
