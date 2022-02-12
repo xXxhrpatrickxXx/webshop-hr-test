@@ -35,6 +35,14 @@ body{
     flex-direction: row;
 }
 
+.l-grid{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    padding:20px;
+    gap:20px;
+}
+
 .h-nav-spacing{
     margin-top: var(--primary-mobile-navigation-height);
     width:100%;
@@ -47,6 +55,10 @@ body{
 
     .l-flex--reverse{
         flex-direction: column;
+    }
+
+    .l-grid{ 
+        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
     }
 
     .h-nav-spacing{

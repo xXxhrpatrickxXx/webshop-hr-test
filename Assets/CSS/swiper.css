@@ -12,6 +12,10 @@
     transform:scale(1.5);
 }
 
+.c-swiper__slide{
+    height:auto!important;
+}
+
 .c-swiper__heading{
     color: var(--primary-theme-transparent-text);
     margin-bottom:10px;

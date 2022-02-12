@@ -1,15 +1,8 @@
-.l-grid{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-    padding:20px;
-    gap:20px;
-}
-
 .c-product{
     background-color: var(--primary-theme-light-grey);
     padding:10px;
     transition: all .3s ease;
+    height:100%;
 }
 
 .c-product:hover{
@@ -31,10 +24,4 @@
     color: var(--primary-theme-transparent-text);
     padding: 15px 0;
     font-weight:bold;
-}
-
-@media(min-width:768px){
-    .l-grid{ 
-        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
-    }
 }
