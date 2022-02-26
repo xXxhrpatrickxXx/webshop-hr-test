@@ -26,6 +26,10 @@ body{
     background-color:var(--primary-theme-dark-grey);
 }
 
+.is-hidden{
+    display: none!important;
+}
+
 .l-flex{
     display: flex;
     flex-direction: column;
