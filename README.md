@@ -23,3 +23,4 @@ This is the frontend of the ak-galleri-website
 4. git branch -d x (deletes branch)
 5. git merge x (merges x into current branch)
 6. git branch -m (old name)  (new name)  (renames branch)
+7. git fetch origin createBranchLocallyForTheRemoteBranchToBePutIn:nameOfRemoteBranchToBePulledToLocalBranch

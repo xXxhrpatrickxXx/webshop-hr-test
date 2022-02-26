@@ -1,3 +1,4 @@
+const bodyElem = document.querySelector("body");
 const swiperAnchorElem = document.querySelector(".js-swiper-anchor");
 
 // swiperTemplate handles building the HTML structure required prior to slider initialization.
@@ -27,7 +28,7 @@ function swiperTemplate(photos, jsSliderName, heading){
       const cProduct__figcaption = document.createElement("figcaption");
 
       cSwiper__slide.className = "c-swiper__slide swiper-slide";
-      cProduct.className = "c-product";
+      cProduct.className = "c-product js-product";
       cProduct__figure.className = "c-product__figure";
       cProduct__image.className = "c-product__image";
       cProduct__figcaption.className = "c-product__figcaption";
@@ -40,6 +41,7 @@ function swiperTemplate(photos, jsSliderName, heading){
       cProduct.appendChild(cProduct__figure);
       cProduct__figure.appendChild(cProduct__image);
       cProduct__figure.appendChild(cProduct__figcaption);
+
     });
 }
 // swiperInit handles initializing the slider after the HTML structure has been built.
@@ -90,5 +92,11 @@ function swiperInit(jsSliderName){
       type: "bullets",
       clickable: true,
     },
+  });
+
+  document.querySelectorAll(`.${jsSliderName} .js-product`).forEach((item)=>{
+    item.addEventListener("click",()=>{
+      addModalEvent(item);
+    })
   });
 }
