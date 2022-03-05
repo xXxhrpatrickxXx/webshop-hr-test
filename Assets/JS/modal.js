@@ -26,9 +26,11 @@ modalOverlayElem.addEventListener("click",(e)=>{
 })
 
 function addModalEvent(product){
-    modalOverlayElem.classList.remove("is-hidden");
-    let productSrc = product.querySelector(".c-product__image").src;
-    let productTitle = product.querySelector(".c-product__figcaption").textContent;
-    jsProductModalImageElem.src = productSrc;
-    jsProductModalFigcaptionElem.textContent = productTitle;
+    if(window.matchMedia("(min-width: 457px)").matches){
+        modalOverlayElem.classList.remove("is-hidden");
+        let productSrc = product.querySelector(".c-product__image").src;
+        let productTitle = product.querySelector(".c-product__figcaption").textContent;
+        jsProductModalImageElem.src = productSrc;
+        jsProductModalFigcaptionElem.textContent = productTitle;
+    }
 }
