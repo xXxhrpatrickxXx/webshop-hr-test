@@ -1,12 +1,3 @@
-fetch("https://jsonplaceholder.typicode.com/photos")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    const photos = data.slice(80, 100);
-    buildProducts(photos);
-  })
-
 function buildProducts(photos){
     let productAnchorElement = document.querySelector(".js-product-anchor");
     photos.forEach(photo => {

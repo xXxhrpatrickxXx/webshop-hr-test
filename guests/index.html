@@ -25,12 +25,15 @@
     <script defer src="/assets/js/global-utils.js"></script>
     <script defer src="/assets/js/nav.js"></script>
     <script defer type="module" src="/assets/js/swiper-guests.js"></script>
+    <script defer src="/assets/js/guest-request.js"></script>
+    <script defer src="/assets/js/product.js"></script>
     <script defer src="/assets/js/modal.js"></script>
+    <script defer src="/assets/js/search-submit.js"></script>
   </head>
   <body>
     <header class="c-header">
       <form class="c-header__form">
-        <input type="search" class="c-header__input" placeholder="Søg" />
+        <input type="search" name="query" class="c-header__input" placeholder="Søg" />
       </form>
     </header>
 
@@ -44,7 +47,7 @@
         <div class="js-swiper-anchor">
         </div>
          <!-- Content can be added here to appear below the sliders and above the grid display. -->
-        <div class="l-grid"></div>
+        <div class="l-grid js-product-anchor"></div>
       </main>
     </div>
 
