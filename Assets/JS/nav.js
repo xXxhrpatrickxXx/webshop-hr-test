@@ -5,10 +5,6 @@ const navHTML = [
         href : "/"
     },
     {
-        name : "Originaler",
-        href : "/originals/"
-    },
-    {
         name : "Gæster",
         href : "/guests/"
     },
