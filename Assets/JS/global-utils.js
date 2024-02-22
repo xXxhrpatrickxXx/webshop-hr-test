@@ -46,7 +46,7 @@ function swiperTemplate(photos, jsSliderName, heading){
 }
 // swiperInit handles initializing the slider after the HTML structure has been built.
 function swiperInit(jsSliderName){
-  const swiper = new Swiper(`.${jsSliderName}`, {
+  new Swiper(`.${jsSliderName}`, {
     direction: "horizontal",
     loop: true,
     autoplay: {

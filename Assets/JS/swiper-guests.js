@@ -1,12 +1,10 @@
-fetch("https://jsonplaceholder.typicode.com/photos")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    const photos = data.slice(20, 30);
-    swiperTemplate(photos, "js-guests-slider","Nye Gæster");
-  })
-  .then(()=> {
-    swiperInit("js-guests-slider");
-  })
+// import FetchImages from "./images-request";
 
+// const images = FetchImages();
+
+// swiperTemplate(images, "js-guests-slider", "Patrick test");
+// swiperInit("js-guests-slider");
+
+// import FetchProducts from "./products";
+
+// FetchProducts();

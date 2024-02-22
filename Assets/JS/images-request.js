@@ -1,9 +1,11 @@
-const MAX_NUMBER = 5000;
-const RANDOM_START = Math.floor(Math.random() * MAX_NUMBER);
-const RANDOM_RANGE = 20;
-const RANDOM_END = RANDOM_START + RANDOM_RANGE;
 
-fetch("https://jsonplaceholder.typicode.com/photos")
+const fetchImages = () => {
+  const MAX_NUMBER = 5000;
+  const RANDOM_START = Math.floor(Math.random() * MAX_NUMBER);
+  const RANDOM_RANGE = 20;
+  const RANDOM_END = RANDOM_START + RANDOM_RANGE;
+
+  fetch("https://jsonplaceholder.typicode.com/photos")
   .then((response) => {
     return response.json();
   })
@@ -12,3 +14,8 @@ fetch("https://jsonplaceholder.typicode.com/photos")
     console.log(photos);
     buildProducts(photos);
   })
+
+  return photos;
+}
+
+export default fetchImages;
